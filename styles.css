@@ -28,7 +28,7 @@ header {
 
 header .logo {
     position: relative;
-    right: 22%;
+    right: 15%;
     max-width: 101px;
     object-fit: contain;
 }
@@ -49,7 +49,7 @@ header .logo {
 
 .actions {
     position: relative;
-    left: 22%;
+    left: 15%;
     top: 20%;
     display: flex;
 }
@@ -65,15 +65,15 @@ header .logo {
     color: #ffffff;
 }
 
-section {
+.section-main {
     display: flex;
     flex-direction: column;
-    background-image: url("img/background.png");
-    background-position: right;
+    /* background-image: url("img/background.png"); */
+    /* background-position: right;
     background-size: contain;
-    background-repeat: no-repeat;
-    height: calc(100vh - 126px); 
-    max-height: calc(100vh - 126px);
+    background-repeat: no-repeat; */
+    height: calc(100vh - 80px); 
+    max-height: calc(100vh - 80px);
 }
 
 .section-info {
@@ -85,10 +85,21 @@ section {
     width: 50%;
 }
 
+.background{
+    position: absolute;
+    left: 122%;
+    bottom: 5%;
+}
+
+.background img {
+    width: 467px;
+    height: 487px;
+}
+
 .section-info h1 {
     position: absolute;
-    left: 15%;
-    top: 5%;
+    left: 12%;
+    bottom: 45%;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -98,8 +109,8 @@ section {
 
 .section-info h4 {
     position: absolute;
-    top: 40%;
-    left: 15%;
+    top: 45%;
+    left: 12%;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -110,8 +121,8 @@ section {
     position: relative;
     width: 430px;
     height: 70px;
-    left: 15%;
-    top: 60%;
+    left: 12%;
+    top: 75%;
     background-color: #292929;
     border-radius: 43px;
 }
@@ -141,4 +152,63 @@ section {
     position: absolute;
     left: 10%;
     top: 36%;
+}
+
+.section-mid{
+    display: flex;
+    background-color: #292929;
+    height: 200vh; 
+    max-height: 200vh;
+}
+
+.section-mid-info {
+    height: 100%;
+    width: 100%;
+}
+
+.section-mid-info-block {
+    position: relative;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    top: 5%;
+}
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid #6a6a6a;
+}
+
+.introduce h1 {
+    position: absolute;
+    left: 5%;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 54px;
+}
+
+.lawyer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    right: 10%;
+}
+
+.lawyer h1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.lawyer h4 {
+    color: #6a6a6a;
+    font-weight: 500;
+    font-size: 18px;
 }
